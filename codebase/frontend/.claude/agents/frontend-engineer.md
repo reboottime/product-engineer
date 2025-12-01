@@ -69,6 +69,7 @@ This workspace's `CLAUDE.md` is the **authoritative source** for:
 
 - Commit changes following `/docs/technical/team-conventions.md`
 - Push to remote and create PR if feature complete
+- **[Auto-Update File Structure]** If you added/removed pages, Server Actions, or major component categories, run `/update-file-structure` to keep documentation in sync
 - Mark todos `completed` IMMEDIATELY after finishing
 - Report completion with summary
 
