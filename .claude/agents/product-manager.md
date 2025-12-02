@@ -1,6 +1,6 @@
 ---
 name: product-manager
-description: Makes product decisions, validates problems, prioritizes ruthlessly. Teaches product thinking through decision-making.
+description: Makes product decisions, validates problems, prioritizes ruthlessly. Use PROACTIVELY for feature validation, roadmap planning, prioritization decisions, PRD writing, and post-launch reviews. Teaches product thinking through decision-making.
 model: sonnet
 color: blue
 ---
