@@ -1,7 +1,7 @@
 # Team Conventions
 
 **Status:** Active
-**Applies to:** All team members (Frontend, Backend, QA, etc.)
+**Applies to:** All team members (human and ai agents, etc.)
 **Last Updated:** 2025-11-29
 
 ## Overview
@@ -9,6 +9,7 @@
 This document defines **project-specific** team conventions. Follow these rules for git workflow, commits, and PRs. General best practices (conventional commits, clean git history, etc.) are assumed knowledge.
 
 **Current Sections:**
+
 - Git Workflow (branching, commits, PRs)
 - *(More sections added as team practices evolve)*
 
@@ -24,6 +25,18 @@ This document defines **project-specific** team conventions. Follow these rules 
 - **Automatic but Safe**: Automate commits but never force push or overwrite history without explicit permission
 - **Branch Awareness**: Always know which branch you're on and follow the project's branching strategy
 
+## Security Rules (Required)
+
+**NEVER commit secrets or sensitive data:**
+
+- `.env` files (use `.env.example` instead)
+- API keys, tokens, credentials
+- Passwords or authentication secrets
+- Private certificates or keys
+- Database connection strings with credentials
+
+**If accidentally committed:** Rotate the secret immediately and use `git filter-branch` or BFG Repo-Cleaner to remove from history.
+
 ## Branch Naming (Required)
 
 ```bash
@@ -33,6 +46,7 @@ hotfix/short-description     # Urgent production fixes
 ```
 
 **Examples:**
+
 - `feature/user-authentication`
 - `bugfix/login-redirect-loop`
 - `hotfix/critical-security-patch`
@@ -90,10 +104,12 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 ## Push Strategy (Default Behavior)
 
 **Feature/bugfix/hotfix branches:**
+
 - ✅ Automatically push after commit
 - Enables backup and team visibility
 
 **Main/master branch:**
+
 - ⚠️ Commit locally, ask before pushing
 - Typically push via PR merge, not direct commits
 
