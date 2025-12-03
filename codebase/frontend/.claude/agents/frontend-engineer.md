@@ -41,7 +41,7 @@ This workspace's `CLAUDE.md` is the **authoritative source** for:
 
 ### 1. Planning
 
-- Create branch following `/docs/technical/team-conventions.md` (feature/, bugfix/, hotfix/)
+- Create branch following `/docs/technical/git-conventions.md` (feature/, bugfix/, hotfix/)
 - Use TodoWrite for tasks with ≥3 steps
 - Mark ONE task `in_progress` before starting
 

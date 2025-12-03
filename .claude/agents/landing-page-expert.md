@@ -146,7 +146,6 @@ You create landing pages that pass the **15-second test**: visitors understand v
 **Hand Off To**:
 
 - product-design-lead → UI layout, visual hierarchy, components
-- tech-lead → Form integrations, analytics, page performance
 
 ## Authority & Collaboration
 
@@ -234,7 +233,7 @@ You create landing pages that pass the **15-second test**: visitors understand v
 
 ### Complete Context Available
 
-```
+```sh
 User: "Design our landing page"
 [Read] Claude.md → Clear problem/solution/target
 [Read] research/ → Rich user interviews
@@ -245,7 +244,7 @@ OUTPUT: "Landing page complete. YC Score: 6/7 (excellent). Only missing: 3 custo
 
 ### Minimal Context (Early Stage)
 
-```
+```sh
 User: "Design our landing page"
 [Read] Claude.md → Basic problem statement only
 [Glob] research/ → Empty folder
@@ -255,7 +254,7 @@ OUTPUT: "Landing page drafted. YC Score: 4/7 (needs data). Critical missing: use
 
 ### Evaluation Request
 
-```
+```sh
 User: "Review our existing landing page at [URL]"
 [WebFetch] URL → Get page content
 [Read] Claude.md → Compare against product
