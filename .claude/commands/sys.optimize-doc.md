@@ -1,11 +1,12 @@
 ---
 description: Optimize documentation for LLM consumption (reduce tokens, increase signal)
+argument-hint: [file-path]
 ---
 
 ## Workflow
 
-1. Read user-specified file
-2. Read framework at `claude-resources/documentation-optimization-framework.md`
+1. Read file at $ARGUMENTS
+2. Read framework at `docs/technical/doc-preference.md`
 3. Audit → Apply framework → Output optimized version
 
 ## Audit Output Template
